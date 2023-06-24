@@ -20,5 +20,5 @@ The next steps will be:
 
 ## Credits
 
-My favicon ([brain made by circuits](/app/favicon.ico)):
-[Icon made by Eucalyp from www.flaticon.com](https://www.flaticon.com/free-icons/brain)
+My favicon (![Neural network that looks like a brain](/app/favicon.ico)):
+[Icon made by imaginationlol from www.flaticon.com](https://www.flaticon.com/free-icon/artificial-intelligence_4460415?term=brain&page=1&position=83&origin=tag&related_id=4460415)
