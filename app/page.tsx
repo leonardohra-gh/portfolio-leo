@@ -5,6 +5,8 @@ import Link from "next/link";
 
 export default function Home() 
 {
+  // For now I need to use &apos; , &lsquo; or &rsquo;
+  // To avoid Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
   // TODO: Translate everything
   const goals = 
   [
@@ -24,19 +26,19 @@ export default function Home()
         <p>
           In this website you will be able to learn a bit more about me and my professional work and skills.
           <br/><br/>
-          In "Projects", you can see the projects I have worked on. 
+          In &lsquo;Projects&rsquo;, you can see the projects I have worked on. 
           You can see sample projects that I have created while learning a framework/library/language.
           There are also my personal projects, which are focused on creating something functional.
           And finally there are projects I have developed for clients. 
           <br/><br/>
-          In "About me", I talk a bit about my academic progress and the jobs I have worked on. 
+          In &lsquo;About me&rsquo;, I talk a bit about my academic progress and the jobs I have worked on. 
           I also summarize my skills in different areas, it is complementar to my curriculum.
         </p>
       </SectionTitle>
       <SectionTitle
         title="Development">
         <p>
-          This website is one of my personal projects, so I will talk about it in depth in the "Projects" section, 
+          This website is one of my personal projects, so I will talk about it in depth in the &lsquo;Projects&rsquo; section, 
           but there are a few goals I am still working on, while developing this website.<br/>
           By the end of the project, I intend to complete the following goals:<br/>
         </p>
@@ -50,7 +52,7 @@ export default function Home()
       <SectionTitle
         title="Credits">
         <p>
-          While developping this website, to avoid "Reinventing the wheel", I have used several codes and assets. Even though I have adapted most of the code for my website, I want to credit the original authors:
+          While developping this website, to avoid &lsquo;Reinventing the wheel&rsquo;, I have used several codes and assets. Even though I have adapted most of the code for my website, I want to credit the original authors:
           <br/><br/>
           My favicon and logo:<br/>
           Icon made by imaginationlol from <a href="https://www.flaticon.com" target="blank">Flaticon</a><br/>
