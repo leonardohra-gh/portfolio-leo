@@ -12,7 +12,7 @@ For this website, I have used [Next.js Framework](https://nextjs.org/) with [Tai
 For now I have set up the environment to work on the website and deploying it (with vercel's preview). 
 The next steps will be:
 1. Creating my home page, which will be similar to this Readme
-2. Creating a [navigation bar](https://tailwindui.com/components/application-ui/navigation/navbars)
+2. Creating a navigation bar
 3. Creating the other pages (About me, Projects, Contact me)
 4. Adding [multi-language support](https://locize.com/blog/next-13-app-dir-i18n/) (English, Brazilian Portuguese, Spanish)
 5. Creating the page for each project
@@ -22,3 +22,6 @@ The next steps will be:
 
 My favicon and logo (![Neural network that looks like a brain](/app/favicon.ico)):
 [Icon made by imaginationlol from www.flaticon.com](https://www.flaticon.com/free-icon/artificial-intelligence_4460415?term=brain&page=1&position=83&origin=tag&related_id=4460415)
+
+Template: 
+My website was made based on [Nextly Template](https://github.com/web3templates/nextly-template/)
