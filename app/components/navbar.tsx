@@ -1,8 +1,9 @@
 'use client'
 
 import Link from "next/link";
-import { Disclosure } from "@headlessui/react";
+import ThemeChanger from "./themeSwitcher";
 import Image from "next/image";
+import { Disclosure } from "@headlessui/react";
 
 const MenuSVG = (params: {"open": boolean}) =>
 {
@@ -57,7 +58,7 @@ const NavigationBar = () =>
                             <>
                                 <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                                     <Link href="/">
-                                        <span className="flex items-center space-x-2 text-2x1 font-medium text-indigo-500 dark:text-gray-100">
+                                        <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                                             <span>
                                                 {/* TODO Check if it is possible to change Image when in another mode  */}
                                                 <Image 
@@ -120,7 +121,7 @@ const NavigationBar = () =>
                 </div>
                 
                 <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-                    
+                    <ThemeChanger />
                 </div>
             </nav>
         </div>
