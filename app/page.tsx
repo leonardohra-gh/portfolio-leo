@@ -1,8 +1,11 @@
 import SectionTitle from "@/app/components/sectionTitle";
 import Checklist from "@/app/components/checklist";
+import ViewOnGithub from "./components/viewOnGithub";
+import Link from "next/link";
 
 export default function Home() 
 {
+  // TODO: Translate everything
   const goals = 
   [
     ["Creating my home page", true],
@@ -12,6 +15,7 @@ export default function Home()
     ["Creating the details page for each project", false],
     ["Improving SEO", false],
   ]
+  const projectGHUrl: string = "https://github.com/leonardohra-gh/portfolio-leo"
 
   return (
     <main>
@@ -37,8 +41,23 @@ export default function Home()
           By the end of the project, I intend to complete the following goals:<br/>
         </p>
         <Checklist content={goals}/>
+        <br/>
+        <p>
+          If you are interested in the development of this website, please check out my github repository:
+        </p>
+        <ViewOnGithub url={projectGHUrl}/>
       </SectionTitle>
-      
+      <SectionTitle
+        title="Credits">
+        <p>
+          While developping this website, to avoid "Reinventing the wheel", I have used several codes and assets. Even though I have adapted most of the code for my website, I want to credit the original authors:
+          <br/><br/>
+          My favicon and logo:<br/>
+          Icon made by imaginationlol from <a href="https://www.flaticon.com" target="blank">Flaticon</a><br/>
+          Template:<br/>
+          My website was made based on <a href="https://github.com/web3templates/nextly-template/" target="blank">Nextly Template</a><br/>
+        </p>
+      </SectionTitle>
     </main>
   )
 }
