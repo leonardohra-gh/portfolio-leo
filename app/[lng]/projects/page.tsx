@@ -1,8 +1,11 @@
 export default function Home
 (
-  params: 
+  Props:
   {
-      lng: string
+    params: 
+    {
+        lng: string
+    }
   }
 ) 
 {

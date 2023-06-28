@@ -1,8 +1,11 @@
 export default function AboutMe
 (
-  params: 
+  Props:
   {
-      lng: string
+    params: 
+    {
+        lng: string
+    }
   }
 ) 
 {
