@@ -1,6 +1,6 @@
 import SectionTitle from "@/app/components/sectionTitle";
 import Checklist from "@/app/components/checklist";
-import ViewOnGithub from "./components/viewOnGithub";
+import ViewOnGithub from "../components/viewOnGithub";
 import Link from "next/link";
 
 export default function Home() 

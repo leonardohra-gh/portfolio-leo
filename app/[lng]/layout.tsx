@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import NavigationBar from './components/navbar'
+import NavigationBar from '../components/navbar'
 import { Providers } from './providers'
 import { Analytics } from '@vercel/analytics/react'
 
