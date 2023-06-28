@@ -1,9 +1,14 @@
 import SectionTitle from "@/app/components/sectionTitle";
 import Checklist from "@/app/components/checklist";
-import ViewOnGithub from "../components/viewOnGithub";
-import Link from "next/link";
+import ViewOnGithub from "@/app/components/viewOnGithub";
 
-export default function Home() 
+export default function Home
+(
+  params: 
+  {
+      lng: string
+  }
+) 
 {
   // For now I need to use &apos; , &lsquo; or &rsquo;
   // To avoid Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities

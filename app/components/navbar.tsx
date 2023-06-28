@@ -36,14 +36,23 @@ const MenuSVG = (params: {"open": boolean}) =>
     )
 }
 
-const NavigationBar = () =>
+const NavigationBar = 
+(
+    {
+        lng
+    }
+    :
+    {
+        lng: string
+    }
+) =>
 {
     const navigation = 
     [
         // TODO change content to match language
-        ["Home", "/"],
-        ["Projects", "/projects"],
-        ["About me", "/about-me"],
+        ["Home", `/${lng}`],
+        ["Projects", `/${lng}/projects`],
+        ["About me", `/${lng}/about-me`],
         // TODO Blog?
     ]
 

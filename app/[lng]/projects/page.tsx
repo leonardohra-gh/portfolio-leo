@@ -1,4 +1,11 @@
-export default function Home() {
+export default function Home
+(
+  params: 
+  {
+      lng: string
+  }
+) 
+{
     return (
       <main>
       </main>

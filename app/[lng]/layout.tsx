@@ -1,8 +1,10 @@
 import './globals.css'
+import { languages } from '@/app/i18n/settings'
 import { Inter } from 'next/font/google'
-import NavigationBar from '../components/navbar'
+import NavigationBar from '@/app/components/navbar'
 import { Providers } from './providers'
 import { Analytics } from '@vercel/analytics/react'
+import { dir } from 'i18next'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,16 +13,33 @@ export const metadata = {
   description: 'The website I have developed to show my skills and projects that I have worked on.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export async function generateStaticParams()
+{
+  return languages.map( (lng) => ( { lng } ))
+}
+
+export default function RootLayout
+(
+  {
+    children,
+    params,
+  }
+  : 
+  {
+    children: React.ReactNode
+    params: 
+    {
+        lng: string
+    }
+  }
+) 
+{
+  //console.log(params.lng)
   return (
-    <html lang="en">
+    <html lang={params.lng} dir={dir(params.lng)}>
       <body className={inter.className}>
         <Providers>
-          <NavigationBar />
+          <NavigationBar lng={params.lng} />
           {children}
           <Analytics />
         </Providers>
