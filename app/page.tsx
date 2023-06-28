@@ -12,8 +12,8 @@ export default function Home()
   [
     ["Creating my home page", true],
     ["Creating a navigation bar", true],
-    ["Creating the other pages (About me, Projects, Contact me)", false],
     ["Adding multi-language support (English, Brazilian Portuguese, Spanish)", false],
+    ["Creating the other pages (About me, Projects)", false],
     ["Creating the details page for each project", false],
     ["Improving SEO", false],
   ]
