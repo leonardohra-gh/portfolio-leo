@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Leonardo\'s portfolio',
   description: 'The website I have developed to show my skills and projects that I have worked on.',
+  favicon: "/favicon.ico"
 }
 
 export async function generateStaticParams()
@@ -34,7 +35,7 @@ export default function RootLayout
   }
 ) 
 {
-  //console.log(params.lng)
+  //console.log("Layout lang: " + params.lng)
   return (
     <html lang={params.lng} dir={dir(params.lng)}>
       <body className={inter.className}>

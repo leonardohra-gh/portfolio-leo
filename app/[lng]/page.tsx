@@ -16,8 +16,8 @@ export default async function Home
 {
   // For now I need to use &apos; , &lsquo; or &rsquo;
   // To avoid Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
-  // TODO: Translate everything
   const {t} = await useTranslation(Props.params.lng, undefined)
+  //console.log(t)
   const goals = 
   [
     [t("section-2-goal-1"), true],
@@ -50,7 +50,7 @@ export default async function Home
         <ViewOnGithub text={t('section-2-github')} url={projectGHUrl}/>
       </SectionTitle>
       <SectionTitle
-        title="Credits">
+        title={t("section-3-title")}>
         <p>
           {t("section-3-content")}
           <br/><br/>
