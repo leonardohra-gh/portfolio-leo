@@ -7,6 +7,7 @@ import { Disclosure } from "@headlessui/react";
 import { useTranslation } from "@/app/i18n/client";
 import {Trans} from 'react-i18next/TransWithoutContext'
 import {languages, langFlags} from "@/app/i18n/settings"
+import logo from "public/logo.png"
 
 const MenuSVG = (params: {"open": boolean}) =>
 {
@@ -36,16 +37,6 @@ const MenuSVG = (params: {"open": boolean}) =>
                 )
             }
         </svg>
-    )
-}
-
-const LanguageSwitcher = (t: any) =>
-{
-    console.log("Lang switcher t: " + JSON.stringify(t))
-    return(
-        <footer style={{ marginTop: 50 }}>
-
-        </footer>
     )
 }
 
@@ -83,7 +74,7 @@ const NavigationBar =
                                         <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                                             <span>
                                                 <Image 
-                                                    src="/logo.png"
+                                                    src={logo}
                                                     alt="Neural network resembling a brain"
                                                     width="32"
                                                     height="32"
