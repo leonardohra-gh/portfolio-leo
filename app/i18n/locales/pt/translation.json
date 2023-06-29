@@ -1,0 +1,22 @@
+{
+    "section-1-title": "O que você encontrará aqui?",
+    "section-1-content": "Nesse website você poderá conhecer um pouco mais sobre mim, minhas habilidades e meu trabalho profissional. Em \"Projetos\", você poderá ver os projetos nos quais eu trabalhei. Existem projetos de exemplo, que eu criei para aprender algum framework, biblioteca ou linguagem. Também existem meus projetos pessoais, que são focados em criar algo funcional. Por fim, existem projetos desenvolvidos para clientes. Em \"Sobre mim\", eu falo um pouco sobre meu progresso acadêmico e aonde eu trabalhei. Também resumo minhas habilidades em áreas diferentes, é uma página complementar ao meu currículo.",
+    "section-2-title": "Desenvolvimento",
+    "section-2-content-p1": "Esse website é parte dos meus projetos pessoais, então eu falarei mais aprofundadamente sobre ele na página de \"Projetos\", mas aqui vou deixar listado alguns objetivos que eu ainda estou trabalhando enquanto desenvolvo o website.\n Ao final do projeto, eu pretendo terminar os seguintes objetivos:\n",
+    "section-2-goal-1": "Criar uma home page",
+    "section-2-goal-2": "Criar uma barra de navegação",
+    "section-2-goal-3": "Adicionar suporte a múltiplas linguagens (Inglês, Português, Espanhol)",
+    "section-2-goal-4": "Criar as outras páginas principais (Sobre mim e Projetos)",
+    "section-2-goal-5": "Criar a página de detalhes para cada projeto",
+    "section-2-goal-6": "Melhorar SEO",
+    "section-2-content-p2": "Caso esteja interessado no desenvolvimento do website, por favor dê uma olhada no meu repositório do GitHub:",
+    "section-2-github": "Abrir no Github",
+    "section-3-title": "Créditos",
+    "section-3-content": "Ao desenvolver o site, para evitar \"Reinventar a roda\", eu adaptei alguns pedaços de códigos e assets. Já que eu usei eles como base para o meu website, gostaria de dar créditos aos autores originais:",
+    "section-3-cred-1-title": "Meu favicon e logo:",
+    "section-3-cred-1-content": "Ícone feito por imaginationlol do Flaticon",
+    "section-3-cred-2-title": "Bandeiras:",
+    "section-3-cred-2-content": "Ícone feito por Freepik de Flaticon",
+    "section-3-cred-3-title": "Template:",
+    "section-3-cred-3-content": "Meu website foi feito usando como base o Nextly Template"
+}

@@ -4,6 +4,10 @@ import Link from "next/link";
 import ThemeChanger from "./themeSwitcher";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
+import { useTranslation } from "@/app/i18n/client";
+import {Trans} from 'react-i18next/TransWithoutContext'
+import {languages, langFlags} from "@/app/i18n/settings"
+import logo from "public/logo.png"
 
 const MenuSVG = (params: {"open": boolean}) =>
 {
@@ -36,14 +40,23 @@ const MenuSVG = (params: {"open": boolean}) =>
     )
 }
 
-const NavigationBar = () =>
+const NavigationBar = 
+(
+    {
+        lng
+    }
+    :
+    {
+        lng: string
+    }
+) =>
 {
+    const {t} = useTranslation(lng, 'navbar', {})
     const navigation = 
     [
-        // TODO change content to match language
-        ["Home", "/"],
-        ["Projects", "/projects"],
-        ["About me", "/about-me"],
+        [t("nav-item-1"), `/${lng}`],
+        [t("nav-item-2"), `/${lng}/projects`],
+        [t("nav-item-3"), `/${lng}/about-me`],
         // TODO Blog?
     ]
 
@@ -60,17 +73,15 @@ const NavigationBar = () =>
                                     <Link href="/">
                                         <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                                             <span>
-                                                {/* TODO Check if it is possible to change Image when in another mode  */}
                                                 <Image 
-                                                    src="/logo.png"
+                                                    src={logo}
                                                     alt="Neural network resembling a brain"
                                                     width="32"
                                                     height="32"
                                                     className="w-8 dark:invert"
                                                 />
                                             </span>
-                                            {/* TODO Change content to match language  */}
-                                            <span>Portfolio</span>
+                                            <span>{t("site-title")}</span>
                                         </span>
                                     </Link>
 
@@ -100,7 +111,24 @@ const NavigationBar = () =>
                         )
                     }
                 </Disclosure>
-
+                <div className="flex w-full lg:w-fit justify-center">
+                    <Trans i18nKey="languageSwitcher" t={t}>
+                        {languages.map((l, index) => 
+                        {
+                            return(
+                                <span key={l} className="py-2 px-2">
+                                    <Link href={`/${l}`}>
+                                        <Image 
+                                            src={langFlags[index]}
+                                            alt={`flag representing language ${l}`}
+                                            width="32"
+                                            height="32"/>
+                                    </Link>
+                                </span>
+                            )
+                        })}
+                    </Trans>
+                </div>
                 {/* menu  */}
                 <div className="hidden text-center lg:flex lg:items-center">
                     <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
