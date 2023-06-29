@@ -57,7 +57,9 @@ export default async function Home
           {t("section-3-cred-1-title")}<br/>
           <a href="https://www.flaticon.com" target="blank">{t("section-3-cred-1-content")}</a><br/>
           {t("section-3-cred-2-title")}<br/>
-          <a href="https://github.com/web3templates/nextly-template/" target="blank">{t("section-3-cred-2-content")}</a><br/>
+          <a href="https://www.flaticon.com" target="blank">{t("section-3-cred-2-content")}</a><br/>
+          {t("section-3-cred-3-title")}<br/>
+          <a href="https://github.com/web3templates/nextly-template/" target="blank">{t("section-3-cred-3-content")}</a><br/>
         </p>
       </SectionTitle>
     </main>
