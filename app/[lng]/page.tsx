@@ -22,7 +22,7 @@ export default async function Home
   [
     [t("section-2-goal-1"), true],
     [t("section-2-goal-2"), true],
-    [t("section-2-goal-3"), false],
+    [t("section-2-goal-3"), true],
     [t("section-2-goal-4"), false],
     [t("section-2-goal-5"), false],
     [t("section-2-goal-6"), false],
