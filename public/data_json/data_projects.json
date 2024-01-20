@@ -1,0 +1,46 @@
+[
+    {
+        "id": "emurb-taxes",
+        "images": ["/public/projects/proj-clients-1-img.png", "/public/projects/proj-clients-1-img.png", "/public/projects/proj-clients-1-img.png"],
+        "translations": 
+        {
+            "en":
+            {
+                "title": "Emurb Taxes title",
+                "paragraphs": ["Emurb taxes paragraph 1", "Emurb taxes paragraph 2"]
+            },
+            "es":
+            {
+                "title": "Título emurb tasas",
+                "paragraphs": ["Emurb tasas parrafo 1", "Emurb tasas parrafo 2"]
+            },
+            "pt":
+            {
+                "title": "Título emurb taxas",
+                "paragraphs": ["Emurb taxas parágrafo 1", "Emurb taxas parágrafo 2"]
+            }
+        }
+    },
+    {
+        "id": "kf-system",
+        "images": ["/public/projects/proj-clients-1-img.png", "/public/projects/proj-clients-1-img.png", "/public/projects/proj-clients-1-img.png"],
+        "translations": 
+        {
+            "en":
+            {
+                "title": "Kung fu system",
+                "paragraphs": ["KF system paragraph 1", "KF system paragraph 2"]
+            },
+            "es":
+            {
+                "title": "Sistema Kung fu",
+                "paragraphs": ["Sistema Kung fu parrafo 1", "Sistema Kung fu parrafo 2"]
+            },
+            "pt":
+            {
+                "title": "Sistema Kung fu",
+                "paragraphs": ["Sistema kung fu paragrafo 1", "Sistema Kung fu paragrafo 2"]
+            }
+        }
+    }
+]

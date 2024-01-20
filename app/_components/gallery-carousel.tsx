@@ -46,7 +46,7 @@ const Carousel =
                     {
                         {/* Items */}
                         return(
-                            <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label={"Slide " + index} data-carousel-slide-to={index}></button>
+                            <button key={"btn-"+index} type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label={"Slide " + index} data-carousel-slide-to={index}></button>
                         )
                     } 
                 )}

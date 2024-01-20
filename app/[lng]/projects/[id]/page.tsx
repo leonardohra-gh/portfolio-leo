@@ -18,15 +18,15 @@ export default async function Project
 {
   //console.log("http://127.0.0.1:4000/projects/" + Props.params.pageId)
   //let props = getStaticProps()
-  console.log(Props.params.id)
-  const data: ProjectPage = await fetch("http://127.0.0.1:4000/projects/" + Props.params.id, 
+  //console.log(Props.params.id)
+  const data: ProjectPage = await fetch("http://127.0.0.1:3000/api/projects/" + Props.params.id, 
   { 
     method: "GET", 
     mode: "cors", 
     headers: { 'Content-Type': 'application/json' }
   }).then((res) => res.json());
 
-  //console.log(data)
+  console.log(data)
 
   let transl = data.translations[Props.params.lng]
   let title = transl.title
