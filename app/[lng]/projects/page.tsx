@@ -17,7 +17,7 @@ export default async function Projects
 ) 
 {
   //let {t} = await useTranslation(Props.params.lng, 'projects/tabs')
-  const data: ApiDataTabs = await fetch("http://127.0.0.1:3000/api/projects", { 
+  const data: ApiDataTabs = await fetch("http://localhost:3000/api/projects", { 
     method: "GET", 
     headers: { 'Content-Type': 'application/json',}
   }).then((res) => res.json());
