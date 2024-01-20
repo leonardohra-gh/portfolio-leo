@@ -1,6 +1,6 @@
-import SectionTitle from "@/app/components/sectionTitle";
-import Checklist from "@/app/components/checklist";
-import ViewOnGithub from "@/app/components/viewOnGithub";
+import SectionTitle from "@/app/_components/sectionTitle";
+import Checklist from "@/app/_components/checklist";
+import ViewOnGithub from "@/app/_components/viewOnGithub";
 import { useTranslation } from "@/app/i18n";
 
 export default async function Home

@@ -4,5 +4,7 @@
     "title-section-3": "Samples",
     "description-section-1": "These are the projects I have been developing for my clients.",
     "description-section-2": "These are my personal projects. If I am facing a problem that I think it would be interesting to develop a solution, I try to work on it.",
-    "description-section-3": "These are sample projects that I create whenever I try to learn a library, framework or programming language. I try to think about an application that would be suitable to put what I am learning in practice."
+    "description-section-3": "These are sample projects that I create whenever I try to learn a library, framework or programming language. I try to think about an application that would be suitable to put what I am learning in practice.",
+    "proj-clients-1-title": "Calculadora de taxas e gerador de documentos da EMURB [EM DESENVOLVIMENTO]",
+    "proj-clients-1-desc": "Aplicação com front end, back end e banco de dados. Permite que os funcionários da EMURB possam calcular a taxa de forma padronizada e facilitada. Além disso, é possível gerar guias de pagamento e documentos."
 }
