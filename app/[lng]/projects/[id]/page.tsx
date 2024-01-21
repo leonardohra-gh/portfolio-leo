@@ -17,10 +17,11 @@ export default async function Project
   //console.log("http://127.0.0.1:4000/projects/" + Props.params.pageId)
   //let props = getStaticProps()
   //console.log(Props.params.id)
+  
   const data: ProjectPage[] = dataProjects;
-  const filteredData: ProjectPage = dataProjects.filter((item) => item.id === Props.params.id)[0];
+  const filteredData: ProjectPage = data.filter((item) => item.id === Props.params.id)[0];
 
-  console.log(filteredData)
+  //console.log(filteredData)
 
   let transl = filteredData.translations[Props.params.lng]
   let title = transl.title
