@@ -10,10 +10,12 @@ const InteractiveTabs =
 (
     {
         tabs,
+        lng,
     }
     :
     {
         tabs: Tab[]
+        lng: string
     }
 ) =>
 {
@@ -42,7 +44,7 @@ const InteractiveTabs =
                                             ) => 
                                             {
                                                 return(
-                                                    <TabCard key={project.title} project={project}/>
+                                                    <TabCard key={project.title} project={project} lng={lng}/>
                                                 )
                                             } 
                                         )}
@@ -59,18 +61,20 @@ const InteractiveTabs =
 const TabCard = 
 (
     {
-        project
+        project,
+        lng
     }
     :
     {
-        project: TabProject
+        project: TabProject,
+        lng: string
     }
 ) => 
 {
     const {title, summary} = project
     return (
         <Link 
-            href={`/projects/${project.id}`} 
+            href={`/${lng}/projects/${project.id}`} 
             className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <Image 
                 className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" 

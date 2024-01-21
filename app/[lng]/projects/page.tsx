@@ -27,7 +27,7 @@ export default async function Projects
 
   return (
     <main>
-      <InteractiveTabs tabs={data.tabs[Props.params.lng]}/>
+      <InteractiveTabs tabs={data.tabs[Props.params.lng]} lng={Props.params.lng}/>
     </main>
   )
 }
