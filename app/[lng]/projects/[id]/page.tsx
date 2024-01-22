@@ -18,10 +18,13 @@ export default async function Project
   //let props = getStaticProps()
   //console.log(Props.params.id)
   
+
   const data: ProjectPage[] = dataProjects;
   const filteredData: ProjectPage = data.filter((item) => item.id === Props.params.id)[0];
-
   //console.log(filteredData)
+
+  if(filteredData === undefined)
+    return(<div/>)
 
   let transl = filteredData.translations[Props.params.lng]
   let title = transl.title

@@ -11,7 +11,7 @@
             {
               "id": "emurb-taxes",
               "postDate": "01/01/2023",
-              "imgUrl": "/public/projects/proj-clients-1-img.png",
+              "imgUrl": "/projects/proj-clients-1-img.png",
               "title": "EMURB's tax calculator and document generator[In development]",
               "summary": "Back end, front end and database application. This application helps EMURB's employees to calculate the tax for certain services and to generate standarized documents."
             }

@@ -17,13 +17,7 @@ export default async function Projects
   }
 ) 
 {
-  //let {t} = await useTranslation(Props.params.lng, 'projects/tabs')
-  /*const data: ApiDataTabs = await fetch("https://portfolio-leo-git-vercel-preview-leonardohra-gh.vercel.app/api/projects", { 
-    method: "GET", 
-    headers: { 'Content-Type': 'application/json',}
-  }).then((res) => res.json());*/
   const data: ApiDataTabs = dataTabs;
-
 
   return (
     <main>
