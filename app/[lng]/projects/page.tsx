@@ -1,4 +1,12 @@
-export default function Home
+// Interesting components: https://flowbite.com/docs/components/tabs/
+// https://flowbite.com/docs/components/card/
+
+import InteractiveTabs from "@/app/_components/tabs"
+import { CMSResultCategory } from "@/app/types";
+import { cmsQueryProjectSummaries } from "@/app/_components/cmsService";
+
+
+export default async function Projects
 (
   Props:
   {
@@ -9,9 +17,11 @@ export default function Home
   }
 ) 
 {
-    return (
-      <main>
-      </main>
-    )
+  const data: CMSResultCategory = await cmsQueryProjectSummaries()
+
+  return (
+    <main>
+      <InteractiveTabs tabs={data.allCategoryProjects} lng={Props.params.lng}/>
+    </main>
+  )
 }
-  

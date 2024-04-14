@@ -1,4 +1,4 @@
-import Container from '@/app/components/container'
+import Container from '@/app/_components/container'
 
 const SectionTitle = 
 (

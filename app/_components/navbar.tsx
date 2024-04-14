@@ -7,7 +7,7 @@ import { Disclosure } from "@headlessui/react";
 import { useTranslation } from "@/app/i18n/client";
 import {Trans} from 'react-i18next/TransWithoutContext'
 import {languages, langFlags} from "@/app/i18n/settings"
-import logo from "public/logo.png"
+import logo from "/public/logo.png"
 
 const MenuSVG = (params: {"open": boolean}) =>
 {

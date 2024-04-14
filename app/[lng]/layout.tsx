@@ -1,7 +1,7 @@
 import './globals.css'
 import { languages } from '@/app/i18n/settings'
 import { Inter } from 'next/font/google'
-import NavigationBar from '@/app/components/navbar'
+import NavigationBar from '@/app/_components/navbar'
 import { Providers } from './providers'
 import { Analytics } from '@vercel/analytics/react'
 import { dir } from 'i18next'
