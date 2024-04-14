@@ -1,38 +1,31 @@
-export interface ApiDataTabs
+export interface CMSResultCategory
 {
-    tabs: TabsTranslations;
+    allCategoryProjects: CategoryProject[]
 }
 
-export type TabsTranslations = Record<string, Tab[]>;
-
-export interface Tab
+export interface CategoryProject
 {
-    title: string
-    description: string
-    projects: TabProject[]
+    _allCategoryNameLocales: LocalizedValue[],
+    categoryType: string,
+    _allCategoryDescriptionLocales: LocalizedValue[],
+    projectContent: SummarizedProject[]
+} 
+
+export interface LocalizedValue
+{
+    locale: string,
+    value: string
 }
 
-export interface TabProject
+export interface SummarizedProject
 {
-    id: string;
-    postDate: string;
-    imgUrl?: string;
-    title: string;
-    summary: string;
-}
-
-export interface ProjectPage
-{
-    id: string;
-    images: string[];
-    translations: ProjectTranslations;
-}
-
-export type ProjectTranslations = Record<string, ProjectInfo>;
-
-export interface ProjectInfo
-{
-    title: string;
-    paragraphs: string[];
+    projectId: string,
+    _allProjectTitleLocales: LocalizedValue[],
+    projectThumbnail: 
+    {
+      url: string
+    },
+    projectDateAdded: string,
+    _allProjectDescriptionLocales: LocalizedValue[]
 }
 

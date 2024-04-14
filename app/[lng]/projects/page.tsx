@@ -2,9 +2,10 @@
 // https://flowbite.com/docs/components/card/
 
 import InteractiveTabs from "@/app/_components/tabs"
-import { useTranslation } from "@/app/i18n";
-import { ApiDataTabs } from "@/app/types";
+import { CMSResultCategory } from "@/app/types";
 import dataTabs from "@/public/data_json/data_tabs.json"
+import { cmsQueryProjectSummaries } from "@/app/_components/cmsService";
+
 
 export default async function Projects
 (
@@ -17,11 +18,11 @@ export default async function Projects
   }
 ) 
 {
-  const data: ApiDataTabs = dataTabs;
-
+  const data: CMSResultCategory = await cmsQueryProjectSummaries()
+  
   return (
     <main>
-      <InteractiveTabs tabs={data.tabs[Props.params.lng]} lng={Props.params.lng}/>
+      <InteractiveTabs tabs={data.allCategoryProjects} lng={Props.params.lng}/>
     </main>
   )
 }

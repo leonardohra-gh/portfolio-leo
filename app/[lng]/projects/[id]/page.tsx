@@ -1,6 +1,4 @@
-import { ProjectPage } from "@/app/types";
 import Carousel from "@/app/_components/gallery-carousel";
-import dataProjects from "@/public/data_json/data_projects.json"
 
 export default async function Project
 (
@@ -14,26 +12,15 @@ export default async function Project
   }
 ) 
 {
-  //console.log("http://127.0.0.1:4000/projects/" + Props.params.pageId)
-  //let props = getStaticProps()
-  //console.log(Props.params.id)
-  
-
-  const data: ProjectPage[] = dataProjects;
-  const filteredData: ProjectPage = data.filter((item) => item.id === Props.params.id)[0];
-  //console.log(filteredData)
-
-  if(filteredData === undefined)
-    return(<div/>)
-
-  let transl = filteredData.translations[Props.params.lng]
-  let title = transl.title
-  let paragraphs = transl.paragraphs
+  let transl = "Traducao"
+  let title = "Titulo"
+  let paragraphs = ["paragrafo 1", "paragrafo 2"]
+  let images = ["", ""]
 
   return (
     <main className="w-full lg:w-1/2 lg:mx-auto">
         <p className="max-w-lg text-3xl font-semibold leading-normal text-gray-900 dark:text-white">{title}</p>
-        <Carousel elements={filteredData.images}/>
+        <Carousel elements={images}/>
         
         {paragraphs.map
         (
