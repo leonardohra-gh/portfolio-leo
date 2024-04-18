@@ -1,4 +1,4 @@
-import { CMSResultCategory, LocalizedValue } from "@/app/types";
+import { CMSResultCategory, CMSResultProject, LocalizedValue } from "@/app/types";
 
 export function getLocalizedText(localizedArray: LocalizedValue[], lng: string)
 {
@@ -86,5 +86,33 @@ export async function cmsQueryProjectSummaries()
       }
     }`
     const data: CMSResultCategory = await cmsService(contentQuery)
+    return data
+}
+
+export async function cmsQueryProjectById(id: string)
+{
+    const contentQuery =`
+    query {
+        contentProject(filter: {projectId: {eq: "${id}"}})
+        {
+          projectId,
+          _allProjectTitleLocales
+          {
+            locale,
+            value
+          },
+          projectDateAdded,
+          projectAlbum
+          {
+            url
+          },
+          _allProjectBodyLocales
+          {
+            locale,
+            value
+          }
+        }
+      }`
+    const data: CMSResultProject = await cmsService(contentQuery)
     return data
 }
