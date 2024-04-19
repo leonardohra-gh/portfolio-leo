@@ -1,6 +1,6 @@
 {
   "name": "portfolio-leo",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "The website I have developed to show my skills and projects that I have worked on.",
   "private": true,
   "scripts": {
@@ -24,7 +24,7 @@
     "eslint-config-next": "^14.1.0",
     "express": "^4.18.2",
     "flowbite": "^1.6.6",
-    "flowbite-react": "^0.4.9",
+    "flowbite-react": "^0.9.0",
     "i18next": "^23.2.3",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-resources-to-backend": "^1.1.4",
