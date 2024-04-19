@@ -22,39 +22,38 @@ const InteractiveTabs =
 {
     return (
         <div className='mx-auto md:w-1/2'>
-            <Tabs.Group
-                aria-label='Projects tab'
-                style='underline'
+            <Tabs 
+                aria-label="Projects tab" 
+                style="underline" 
                 className='mx-2'>
-                    {tabs.map
-                    ( 
-                        (
-                            tab: CategoryProject
-                        ) => 
-                        {
-                            return(
-                                <Tabs.Item
-                                    key={getLocalizedText(tab._allCategoryNameLocales, lng)}
-                                    active
-                                    title={getLocalizedText(tab._allCategoryNameLocales, lng)}>
-                                        <h2 className='my-2'>{getLocalizedText(tab._allCategoryDescriptionLocales, lng)}</h2>
-                                        {tab.projectContent.map
-                                        ( 
-                                            (
-                                                project: SummarizedProject
-                                            ) => 
-                                            {
-                                                return(
-                                                    <TabCard key={project.projectId} project={project} lng={lng}/>
-                                                )
-                                            } 
-                                        )}
-                                </Tabs.Item>
-                            )
-                        }
-                    )}
-                
-            </Tabs.Group>
+                {tabs.map
+                ( 
+                    (
+                        tab: CategoryProject
+                    ) => 
+                    {
+                        return(
+                            <Tabs.Item 
+                                key={getLocalizedText(tab._allCategoryNameLocales, lng)}
+                                active
+                                title={getLocalizedText(tab._allCategoryNameLocales, lng)}>
+                                <h2 className='my-2'>{getLocalizedText(tab._allCategoryDescriptionLocales, lng)}</h2>
+                                {tab.projectContent.map
+                                ( 
+                                    (
+                                        project: SummarizedProject
+                                    ) => 
+                                    {
+                                        return(
+                                            <TabCard key={project.projectId} project={project} lng={lng}/>
+                                        )
+                                    } 
+                                )}
+                            </Tabs.Item>
+                        )
+                    }
+                )}
+            </Tabs>
         </div>
     )
 }
