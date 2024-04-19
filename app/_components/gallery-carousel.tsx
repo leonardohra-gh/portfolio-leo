@@ -22,7 +22,7 @@ const ImgCarousel =
                 (imgUrl: string) =>
                 {
                     return(
-                        <Image src={imgUrl} alt="..." width={400} height={400} />
+                        <Image key={imgUrl} src={imgUrl} alt="..." width={400} height={400} />
                     )
                 }
             )}
