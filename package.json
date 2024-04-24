@@ -4,7 +4,7 @@
   "description": "The website I have developed to show my skills and projects that I have worked on.",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
