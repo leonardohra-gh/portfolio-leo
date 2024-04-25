@@ -5,8 +5,7 @@ export function getLocalizedText(localizedArray: LocalizedValue[], lng: string)
     const cmsLangs: {[cmsLang: string]: string} = 
     {
         "en": "en",
-        "pt": "pt_BR",
-        "es": "es"
+        "pt": "pt_BR"
     }
     
     let localizedText = ""
