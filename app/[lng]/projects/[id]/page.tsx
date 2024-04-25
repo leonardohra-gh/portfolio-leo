@@ -3,14 +3,6 @@ import { CMSResultProject } from "@/app/types";
 import { cmsQueryProjectById, getLocalizedText } from "@/app/_components/cmsService";
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
-function CustomH1({ children }: { children: React.ReactNode }) {
-  return <h1 style={{ color: 'blue', fontSize: '100px' }}>{children}</h1>
-}
- 
-const overrideComponents = {
-  h1: CustomH1,
-}
-
 export default async function Project
 (
   Props:
