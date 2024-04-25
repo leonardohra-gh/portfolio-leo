@@ -2,7 +2,6 @@ import './globals.css'
 import { languages } from '@/app/i18n/settings'
 import { Inter } from 'next/font/google'
 import NavigationBar from '@/app/_components/navbar'
-import { Analytics } from '@vercel/analytics/react'
 import { dir } from 'i18next'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Flowbite } from 'flowbite-react'
