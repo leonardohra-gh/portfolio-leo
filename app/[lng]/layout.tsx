@@ -41,9 +41,8 @@ export default function RootLayout
         <Flowbite>
           <NavigationBar lng={params.lng} />
           {children}
-          <Analytics />
-        </Flowbite>
         <SpeedInsights />
+        </Flowbite>
       </body>
     </html>
   )
