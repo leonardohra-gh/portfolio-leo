@@ -48,7 +48,10 @@ const ImgCarousel =
                         (image: ImageFile) =>
                         {
                             return(
-                                <Image className="object-contain h-full w-full rounded-md" key={image.url} src={image.url} alt="..." width={image.width} height={image.height} />
+                                <a className="w-full h-full" target="_blank" href={image.url} rel="noopener noreferrer">
+                                    <Image className="object-contain h-full w-full rounded-md" key={image.url} src={image.url} alt="..." width={image.width} height={image.height} />
+                                </a>
+                                
                             )
                         }
                     )}
