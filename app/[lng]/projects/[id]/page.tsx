@@ -3,6 +3,7 @@ import { CMSResultProject } from "@/app/types";
 import { cmsQueryProjectById, getLocalizedText } from "@/app/_components/cmsService";
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
+
 export default async function Project
 (
   Props:

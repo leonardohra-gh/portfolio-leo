@@ -5,7 +5,7 @@ const colors = require("tailwindcss/colors");
 const flowbite = require("flowbite-react/tailwind");
 
 module.exports = {
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "selector", // or 'media' or 'selector'
   content: [
     flowbite.content(),
     "./node_modules/flowbite-react/**/*.js",

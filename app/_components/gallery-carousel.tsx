@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Carousel } from "flowbite-react";
 import { ImageFile } from "@/app/types";
 import type { CustomFlowbiteTheme } from "flowbite-react";
-import { Flowbite } from "flowbite-react";
+import { DarkThemeToggle, Flowbite } from "flowbite-react";
 
 const customTheme: CustomFlowbiteTheme = 
 {
@@ -57,6 +57,7 @@ const ImgCarousel =
                     )}
                 </Carousel>
             </div>
+            
         </Flowbite>
     )
 }
