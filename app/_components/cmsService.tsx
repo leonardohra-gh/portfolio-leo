@@ -104,7 +104,9 @@ export async function cmsQueryProjectById(id: string)
           projectDateAdded,
           projectAlbum
           {
-            url
+            url,
+            height,
+            width
           },
           _allProjectBodyLocales
           {

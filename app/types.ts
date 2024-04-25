@@ -39,9 +39,13 @@ export interface DetailedProject
     projectId: string,
     _allProjectTitleLocales: LocalizedValue[],
     projectDateAdded: string,
-    projectAlbum:  
-    {
-      url: string
-    }[],
+    projectAlbum: ImageFile[],
     _allProjectBodyLocales: LocalizedValue[]
+}
+
+export interface ImageFile
+{
+    url: string,
+    height: number,
+    width: number
 }

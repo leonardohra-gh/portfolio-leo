@@ -1,5 +1,6 @@
 // Interesting component: https://flowbite.com/docs/components/avatar/
 // https://flowbite.com/docs/components/card/ User profile card
+// https://flowbite.com/docs/components/timeline/
 import ProfileCard from "@/app/_components/profile-card"
 
 export default function AboutMe
