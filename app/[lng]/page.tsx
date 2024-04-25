@@ -70,38 +70,8 @@ export default async function Home
 
   return (
     <main>
-      <Hero />
-      <SectionTitle
-        title={t('section-1-title')}>
-        <p>
-          {t('section-1-content')}
-        </p>
-      </SectionTitle>
-      <SectionTitle
-        title={t('section-2-title')}>
-        <p>
-          {t('section-2-content-p1')}
-        </p>
-        <Checklist content={goals}/>
-        <br/>
-        <p>
-          {t('section-2-content-p2')}
-        </p>
-        <ViewOnGithub text={t('section-2-github')} url={projectGHUrl}/>
-      </SectionTitle>
-      <SectionTitle
-        title={t("section-3-title")}>
-        <p>
-          {t("section-3-content")}
-          <br/><br/>
-          {t("section-3-cred-1-title")}<br/>
-          <a href="https://www.flaticon.com" target="blank">{t("section-3-cred-1-content")}</a><br/>
-          {t("section-3-cred-2-title")}<br/>
-          <a href="https://www.flaticon.com" target="blank">{t("section-3-cred-2-content")}</a><br/>
-          {t("section-3-cred-3-title")}<br/>
-          <a href="https://github.com/web3templates/nextly-template/" target="blank">{t("section-3-cred-3-content")}</a><br/>
-        </p>
-      </SectionTitle>
+      <Hero lng={Props.params.lng}/>
+      
     </main>
   )
 }
