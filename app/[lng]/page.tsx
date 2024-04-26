@@ -1,8 +1,8 @@
-import SectionTitle from "@/app/_components/sectionTitle";
-import Checklist from "@/app/_components/checklist";
-import ViewOnGithub from "@/app/_components/viewOnGithub";
+import SectionTitle from "@/app/_components/HomePage/sectionTitle";
+import Checklist from "@/app/_components/HomePage/checklist";
+import ViewOnGithub from "@/app/_components/General/viewOnGithub";
 import { useTranslation } from "@/app/i18n";
-import Hero from "@/app/_components/hero" ;
+import Hero from "@/app/_components/HomePage/hero" ;
 
 export default async function Home
 (

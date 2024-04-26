@@ -1,6 +1,6 @@
-import ImgCarousel from "@/app/_components/gallery-carousel";
+import ImgCarousel from "@/app/_components/Projects/Project/gallery-carousel";
 import { CMSResultProject } from "@/app/types";
-import { cmsQueryProjectById, getLocalizedText } from "@/app/_components/cmsService";
+import { cmsQueryProjectById, getLocalizedText } from "@/app/_components/General/cmsService";
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 

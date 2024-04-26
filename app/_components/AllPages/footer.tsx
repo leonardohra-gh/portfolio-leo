@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
-import Container from "./container";
-import { RegularParagraph } from "@/app/_components/typography";
+import Container from "../General/container";
+import { RegularParagraph } from "@/app/_components/General/typography";
 import { useTranslation } from "@/app/i18n/client";
 
 export default function Footer({ lng }: { lng: string }) {
@@ -36,7 +36,7 @@ export default function Footer({ lng }: { lng: string }) {
                     </a>
                 </div>
                 <RegularParagraph paragraphs={[t("credits-ilustration")]} classNamePlus="text-center my-2" />
-                <p className="mt-1 text-gray-500 dark:text-gray-400">{t("credits-more-info")}<a href="#" className="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline">{t("credits-click")}</a></p>
+                <p className="mt-1 text-gray-500 dark:text-gray-400">{t("credits-more-info")}<a href="https://github.com/leonardohra-gh/portfolio-leo/blob/vercel-preview/README.md#credits" className="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline">{t("credits-click")}</a></p>
             </div>
         </Container>
     );

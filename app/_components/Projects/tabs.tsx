@@ -5,8 +5,8 @@ import { Tabs } from 'flowbite-react';
 import Image from "next/image";
 import { CategoryProject, SummarizedProject } from "@/app/types"
 import Link from 'next/link';
-import { getLocalizedText } from "@/app/_components/cmsService";
-import { RegularParagraph } from "@/app/_components/typography";
+import { getLocalizedText } from "@/app/_components/General/cmsService";
+import { RegularParagraph } from "@/app/_components/General/typography";
 
 const InteractiveTabs =
     (

@@ -1,11 +1,11 @@
 import './globals.css'
 import { languages } from '@/app/i18n/settings'
 import { Inter } from 'next/font/google'
-import NavigationBar from '@/app/_components/navbar'
+import NavigationBar from '@/app/_components/AllPages/navbar'
 import { dir } from 'i18next'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Flowbite } from 'flowbite-react'
-import Footer from "@/app/_components/footer"
+import Footer from "@/app/_components/AllPages/footer"
 
 const inter = Inter({ subsets: ['latin'] })
 

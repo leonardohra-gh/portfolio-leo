@@ -1,12 +1,15 @@
+'use client'
 import profilePic from "@/public/my_photos/leo no BG.png"
 import Image from "next/image";
 import { Button } from "flowbite-react";
-import ViewOnGithub from "@/app/_components/viewOnGithub";
+import ViewOnGithub from "@/app/_components/General/viewOnGithub";
 import Link from "next/link";
-import Container from "./container";
-import { SecondLevelHeading } from "@/app/_components/typography";
+import Container from "@/app/_components/General/container";
+import { SecondLevelHeading } from "@/app/_components/General/typography";
+import { useTranslation } from "@/app/i18n/client";
 
 export default function ProfileCard({lng}: {lng:string}) {
+
   return (
     <Container className="flex flex-col items-center">
       <Image
