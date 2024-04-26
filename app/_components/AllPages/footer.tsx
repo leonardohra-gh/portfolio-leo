@@ -9,8 +9,7 @@ export default function Footer({ lng }: { lng: string }) {
     const { t } = useTranslation(lng, 'footer', {})
 
     return (
-        <Container>
-            <div className="border-t border-trueGray-700 flex flex-col items-center">
+            <div className="my-1 border-t border-trueGray-700 flex flex-col items-center">
                 <RegularParagraph paragraphs={[t("follow-me")]} classNamePlus="text-center my-2" />
                 <div className="flex flex-row gap-5">
                     <a
@@ -38,7 +37,6 @@ export default function Footer({ lng }: { lng: string }) {
                 <RegularParagraph paragraphs={[t("credits-ilustration")]} classNamePlus="text-center my-2" />
                 <p className="mt-1 text-gray-500 dark:text-gray-400">{t("credits-more-info")}<a href="https://github.com/leonardohra-gh/portfolio-leo/blob/vercel-preview/README.md#credits" className="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline">{t("credits-click")}</a></p>
             </div>
-        </Container>
     );
 }
 

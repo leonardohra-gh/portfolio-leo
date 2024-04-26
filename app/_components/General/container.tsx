@@ -13,7 +13,7 @@ const Container =
 {
     return (
         <div
-            className={`container lg:p-8 mx-auto xl:px-0 w-11/12
+            className={`container w-11/12 2xl:w-3/5 mx-auto
                 ${
                     className? className : ""
                 }`}

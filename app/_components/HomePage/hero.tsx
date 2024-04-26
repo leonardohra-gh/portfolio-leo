@@ -11,7 +11,7 @@ import { useTranslation } from "@/app/i18n/client";
 export default function ProfileCard({lng}: {lng:string}) {
 
   return (
-    <Container className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <Image
         alt="Leo's photo"
         height="400"
@@ -25,11 +25,11 @@ export default function ProfileCard({lng}: {lng:string}) {
         "Acredito que mais importante do que saber tudo, é ser capaz de aprender o que não sei de forma eficiente."]}
         classNamePlus="text-center"
       />
-      <div className="mx-auto flex flex-row items-center gap-1 md:p-5 md:gap-5">
+      <div className="mx-auto flex flex-col md:flex-row items-center gap-1 md:p-5 md:gap-5">
         <Button color="purple"><Link href={`/${lng}/projects`}>Conheça meus projetos</Link></Button>
         <Button color="purple">Entre em contato</Button>
         <ViewOnGithub text="Veja meu repositório no Github" url="https://github.com/leonardohra-gh?tab=repositories" />
       </div>
-    </Container>
+    </div>
   );
 }

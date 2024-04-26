@@ -6,6 +6,7 @@ import { dir } from 'i18next'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Flowbite } from 'flowbite-react'
 import Footer from "@/app/_components/AllPages/footer"
+import Container from "@/app/_components/General/container";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,12 +39,14 @@ export default function RootLayout
   return (
     <html lang={params.lng} dir={dir(params.lng)}>
       <body className={inter.className}>
-        <Flowbite>
-          <NavigationBar lng={params.lng} />
-          {children}
-        <SpeedInsights />
-        </Flowbite>
-        <Footer lng={params.lng}/>
+        <Container>
+          <Flowbite>
+            <NavigationBar lng={params.lng} />
+            {children}
+            <SpeedInsights />
+          </Flowbite>
+          <Footer lng={params.lng} />
+        </Container>
       </body>
     </html>
   )

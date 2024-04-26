@@ -21,7 +21,7 @@ const InteractiveTabs =
             }
     ) => {
         return (
-            <div className='mx-auto md:w-1/2'>
+            <div>
                 <Tabs
                     aria-label="Projects tab"
                     style="underline"
@@ -84,7 +84,7 @@ const TabCard =
                     height={200}
                     alt="" />
                 <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+                    <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h2>
                     <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{summary}</p>
                 </div>
             </Link>

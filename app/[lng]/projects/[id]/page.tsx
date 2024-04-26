@@ -32,7 +32,7 @@ export default async function Project
   }
 
   return (
-    <main className="w-11/12 lg:w-1/2 mx-auto">
+    <main>
       <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">{title}</h1>
         <ImgCarousel elements={images}/>
         <MDXRemote source={body} components={components} />
