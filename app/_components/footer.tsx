@@ -44,6 +44,7 @@ export default function Footer({ lng }: { lng: string }) {
 
 const Twitter = ({ size = 30 }) => (
     <svg
+        className="dark:invert"
         xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
@@ -55,6 +56,7 @@ const Twitter = ({ size = 30 }) => (
 
 const Github = ({ size = 30 }) => (
     <svg
+        className="dark:invert"
         role="img"
         width={size}
         height={size}
@@ -68,6 +70,7 @@ const Github = ({ size = 30 }) => (
 
 const Linkedin = ({ size = 30 }) => (
     <svg
+        className="dark:invert"
         xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
