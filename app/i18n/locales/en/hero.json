@@ -1,7 +1,8 @@
 {
-    "hero-title": "Portfolio",
-    "hero-sub-title": "Home",
-    "hero-button-1": "Projects",
-    "hero-button-2": "Projects",
-    "hero-button-3": "Projects"
+    "title": "My Portfolio",
+    "sub-title-1": "I am a Full Stack developer, who likes to learn new technologies and tools, always challenging myself",
+    "sub-title-2": "I believe it is more important to be able to learn something efficiently, rather than to know everything.",
+    "button-1": "Check out my projects", 
+    "button-2": "Contact me", 
+    "button-3": "Check out my Github repository"
 }
