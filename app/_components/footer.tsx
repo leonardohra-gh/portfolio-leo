@@ -1,27 +1,30 @@
-import Link from "next/link";
-import Image from "next/image";
+'use client'
 import React from "react";
 import Container from "./container";
 import { RegularParagraph } from "@/app/_components/typography";
+import { useTranslation } from "@/app/i18n/client";
 
-export default function Footer() {
+export default function Footer({ lng }: { lng: string }) {
+
+    const { t } = useTranslation(lng, 'footer', {})
+
     return (
         <Container>
             <div className="border-t border-trueGray-700 flex flex-col items-center">
-                <RegularParagraph paragraphs={["Siga-me nas redes sociais"]} classNamePlus="text-center my-2"/>
+                <RegularParagraph paragraphs={[t("follow-me")]} classNamePlus="text-center my-2" />
                 <div className="flex flex-row gap-5">
                     <a
                         href="https://github.com/leonardohra-gh"
                         target="_blank"
                         rel="noopener">
-                        <span className="sr-only">Gituhb</span>
+                        <span className="sr-only">Github</span>
                         <Github />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/leonardohra/"
                         target="_blank"
                         rel="noopener">
-                        <span className="sr-only">Linkedin</span>
+                        <span className="sr-only">LinkedIn</span>
                         <Linkedin />
                     </a>
                     <a
@@ -32,8 +35,8 @@ export default function Footer() {
                         <Twitter />
                     </a>
                 </div>
-                <RegularParagraph paragraphs={["A maioria das ilustrações utilizadas foram tiradas do site Freepik e Flaticon"]} classNamePlus="text-center my-2"/>
-                <p className="mt-1 text-gray-500 dark:text-gray-400">Para mais informações, <a href="#" className="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline">Clique aqui</a></p>
+                <RegularParagraph paragraphs={[t("credits-ilustration")]} classNamePlus="text-center my-2" />
+                <p className="mt-1 text-gray-500 dark:text-gray-400">{t("credits-more-info")}<a href="#" className="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline">{t("credits-click")}</a></p>
             </div>
         </Container>
     );

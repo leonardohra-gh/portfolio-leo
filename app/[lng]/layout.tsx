@@ -43,7 +43,7 @@ export default function RootLayout
           {children}
         <SpeedInsights />
         </Flowbite>
-        <Footer/>
+        <Footer lng={params.lng}/>
       </body>
     </html>
   )
