@@ -33,7 +33,7 @@ export function ContactForm({ lng }: { lng: string }) {
                     <div className="mb-2 block">
                         <Label htmlFor="formEmail" value={t("emailLabel")} />
                     </div>
-                    <TextInput id="formEmail" type="email" placeholder={t("emailPlaceholder")} required shadow {...register('email', { required: false })} />
+                    <TextInput id="formEmail" type="email" placeholder={t("emailPlaceholder")} shadow {...register('email', { required: false })} />
                 </div>
                 <div>
                     <div className="mb-2 block">
