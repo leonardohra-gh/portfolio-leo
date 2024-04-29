@@ -1,0 +1,10 @@
+{
+    "heading": "Contact me",
+    "nameCompanyLabel": "Name/Company",
+    "nameCompanyPlaceholder": "Google",
+    "emailLabel": "Email",
+    "emailPlaceholder": "hiring@google.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "We would like to hire you!",
+    "buttonSubmit": "Send"
+}
