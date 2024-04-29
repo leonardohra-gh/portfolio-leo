@@ -36,6 +36,11 @@ export async function POST(request: NextRequest) {
         await sendMailPromise();
         return NextResponse.json({ message: 'Email sent' });
     } catch (err) {
-        return NextResponse.json({ error: err }, { status: 500 });
+        return NextResponse.json({ error: err }, { status: 502 });
     }
+}
+
+export async function GET(request: NextRequest) 
+{
+    return NextResponse.json({ message: 'route working!' });
 }
