@@ -22,7 +22,7 @@ export function ContactForm({ lng }: { lng: string }) {
 
     return (
         <div className="flex flex-col items-center">
-            <form className="flex w-full lg:w-3/5 flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
+            <form id="contactForm" className="flex w-full lg:w-3/5 flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <div className="mb-2 block">
                         <Label htmlFor="formNameCompany" value={t("nameCompanyLabel")} />
