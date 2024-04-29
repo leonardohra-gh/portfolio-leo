@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
                 if (!err) {
                     resolve('Email sent');
                 } else {
-                    reject(err);
+                    reject(err.message);
                 }
             });
         });
@@ -38,9 +38,4 @@ export async function POST(request: NextRequest) {
     } catch (err) {
         return NextResponse.json({ error: err }, { status: 500 });
     }
-}
-
-export async function GET(request: NextRequest) 
-{
-    return NextResponse.json({ message: 'route working!' });
 }
