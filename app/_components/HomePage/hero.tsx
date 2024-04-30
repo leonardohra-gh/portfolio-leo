@@ -10,8 +10,9 @@ import { useTranslation } from "@/app/i18n/client";
 export default function ProfileCard({lng}: {lng:string}) 
 {
   const {t} = useTranslation(lng, 'hero')
+  const buttonsStr: string[] = t("buttons" , { returnObjects: true })
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center my-4">
       <Image
         alt="Leo's photo"
         height="400"
@@ -25,9 +26,9 @@ export default function ProfileCard({lng}: {lng:string})
         classNamePlus="text-center"
       />
       <div className="mx-auto flex flex-col md:flex-row items-center gap-1 md:p-5 md:gap-5">
-        <Button color="purple"><Link href={`/${lng}/projects`}>{t("button-1")}</Link></Button>
-        <Button color="purple" href="#contactForm">{t("button-2")}</Button>
-        <ViewOnGithub text={t("button-3")} url="https://github.com/leonardohra-gh?tab=repositories" />
+        <Button color="purple"><Link href={`/${lng}/projects`}>{buttonsStr[0]}</Link></Button>
+        <Button color="purple" href="#contactForm">{buttonsStr[1]}</Button>
+        <ViewOnGithub text={buttonsStr[2]} url="https://github.com/leonardohra-gh?tab=repositories" />
       </div>
     </div>
   );

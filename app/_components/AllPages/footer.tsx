@@ -9,7 +9,7 @@ export default function Footer({ lng }: { lng: string }) {
     const { t } = useTranslation(lng, 'footer', {})
 
     return (
-            <div className="my-1 border-t border-trueGray-700 flex flex-col items-center">
+            <div className="my-4 border-t border-trueGray-700 flex flex-col items-center">
                 <RegularParagraph paragraphs={[t("follow-me")]} classNamePlus="text-center my-2" />
                 <div className="flex flex-row gap-5">
                     <a

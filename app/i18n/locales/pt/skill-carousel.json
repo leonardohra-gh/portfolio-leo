@@ -1,0 +1,46 @@
+{
+    "title": "Habilidades",
+    "subtitle": "Uma vez que tive a oportunidade de trabalhar em várias áreas ao participar de certos projetos, pude aprender várias habilidades, como por exemplo:",
+    "items":
+    [
+        {
+            "src": "https://www.datocms-assets.com/129761/1714488227-front-end-programming.png",
+            "listTitle": "Front-end",
+            "listItems": 
+            [
+                "React/Next.js",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "src": "https://www.datocms-assets.com/129761/1714497119-coding_2085257.png",
+            "listTitle": "Back-end",
+            "listItems": 
+            [
+                "Java Springboot",
+                "APIs C#",
+                "Análise de Dados em Python"
+            ]
+        },
+        {
+            "src": "https://www.datocms-assets.com/129761/1714497431-database-storage_2906206.png",
+            "listTitle": "Bancos de dados",
+            "listItems": 
+            [
+                "MySQL",
+                "MariaDB",
+                "MongoDB"
+            ]
+        },
+        {
+            "src": "https://www.datocms-assets.com/129761/1714499142-cloud-computing.png",
+            "listTitle": "Outras habilidades",
+            "listItems": 
+            [
+                "Desenvolvimento de jogos (Unreal Engine, LÖVE - LUA)",
+                "Desenvolvimento mobile (iOS, Android)",
+                "Deployment em Docker"
+            ]
+        }
+    ]
+}

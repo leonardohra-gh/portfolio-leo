@@ -93,14 +93,14 @@ export const ListWithTitle =
     ) =>
     {
         return (
-            <div className="flex flex-col justify-center">
-                <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
+            <div className={`flex flex-col justify-center ${classNamePlus ? classNamePlus : ""}`} >
+                <h3 className="mb-2 text-center text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
                 <List>
                     {items.map(
-                        (item) =>
+                        (item, index) =>
                         {
                             return (
-                                <List.Item className={`${classNamePlus ? classNamePlus : ""}`}>{item}</List.Item>
+                                <List.Item className="text-center" key={`list-item-${index}`}>{item}</List.Item>
                             )
                         }
                     )}

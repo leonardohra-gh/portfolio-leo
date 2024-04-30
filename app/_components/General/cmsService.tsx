@@ -49,7 +49,8 @@ export async function cmsService(query: string)
 export async function cmsQueryProjectSummaries()
 {
     const contentQuery =`
-    query {
+    query 
+    {
       allCategoryProjects
       {
         _allCategoryNameLocales
@@ -91,7 +92,8 @@ export async function cmsQueryProjectSummaries()
 export async function cmsQueryProjectById(id: string)
 {
     const contentQuery =`
-    query {
+    query 
+    {
         contentProject(filter: {projectId: {eq: "${id}"}})
         {
           projectId,
