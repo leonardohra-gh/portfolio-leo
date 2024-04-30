@@ -5,6 +5,7 @@ import { Button, Label, TextInput, Textarea } from "flowbite-react";
 import { useTranslation } from "@/app/i18n/client";
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/app/utils/send-email';
+import {SecondLevelHeading} from "@/app/_components/General/typography";
 
 export type FormData = {
     nameCompany: string;
@@ -22,6 +23,7 @@ export function ContactForm({ lng }: { lng: string }) {
 
     return (
         <div className="flex flex-col items-center">
+            <SecondLevelHeading title={t("heading")} subtitles={[t("subheading")]} classNamePlus="text-center"/>
             <form id="contactForm" className="flex w-full lg:w-3/5 flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <div className="mb-2 block">
