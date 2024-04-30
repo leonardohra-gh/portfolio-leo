@@ -4,6 +4,7 @@ import ViewOnGithub from "@/app/_components/General/viewOnGithub";
 import { useTranslation } from "@/app/i18n";
 import Hero from "@/app/_components/HomePage/hero" ;
 import { ContactForm } from "@/app/_components/HomePage/contactForm";
+import SkillCarousel from "@/app/_components/HomePage/skillCarousel";
 
 export default async function Home
 (
@@ -72,6 +73,7 @@ export default async function Home
   return (
     <main>
       <Hero lng={Props.params.lng}/>
+      <SkillCarousel />
       <ContactForm lng={Props.params.lng}/>
     </main>
   )
