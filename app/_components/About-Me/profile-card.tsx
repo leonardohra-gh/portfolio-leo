@@ -7,7 +7,8 @@ import linkedinIcon from "@/public/about-me/linkedin.png"
 import emailIcon from "@/public/about-me/email.png"
 
 
-export default function ProfileCard() {
+export default function ProfileCard()
+{
   return (
     <Card className="max-w-sm">
       <div className="flex flex-col items-center p-5 ">
@@ -21,9 +22,11 @@ export default function ProfileCard() {
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Leonardo Henrique da Rocha Araujo</h5>
         <span className="text-sm text-gray-500 dark:text-gray-400">Desenvolvedor Full Stack</span>
         <div className="flex flex-wrap gap-2 pt-2">
-          <Button size="xs" outline pill>
-            <Image src={linkedinIcon} width={32} height={32} alt="" className="h-6 w-6" />
-          </Button>
+          <a href="https://www.linkedin.com/in/leonardohra/" target="_blank" rel="noopener">
+            <Button size="xs" outline pill>
+              <Image src={linkedinIcon} width={32} height={32} alt="" className="h-6 w-6" />
+            </Button>
+          </a>
           <Button size="xs" outline pill>
             <Image src={emailIcon} width={32} height={32} alt="" className="h-6 w-6" />
           </Button>
