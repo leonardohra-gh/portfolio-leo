@@ -1,7 +1,8 @@
-import SectionTitle from "@/app/_components/sectionTitle";
-import Checklist from "@/app/_components/checklist";
-import ViewOnGithub from "@/app/_components/viewOnGithub";
 import { useTranslation } from "@/app/i18n";
+import Hero from "@/app/_components/HomePage/hero" ;
+import { ContactForm } from "@/app/_components/HomePage/contactForm";
+import { CarouselImageAndList, CarouselImageAndListItem } from "@/app/_components/General/carousel";
+import { TestimonialsElement, Testimonial } from "@/app/_components/HomePage/testimonials";
 
 export default async function Home
 (
@@ -14,54 +15,20 @@ export default async function Home
   }
 ) 
 {
-  // For now I need to use &apos; , &lsquo; or &rsquo;
-  // To avoid Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
-  const {t} = await useTranslation(Props.params.lng, undefined)
-  //console.log(t)
-  const goals = 
-  [
-    [t("section-2-goal-1"), true],
-    [t("section-2-goal-2"), true],
-    [t("section-2-goal-3"), true],
-    [t("section-2-goal-4"), false],
-    [t("section-2-goal-5"), false],
-    [t("section-2-goal-6"), false],
-  ]
-  const projectGHUrl: string = "https://github.com/leonardohra-gh/portfolio-leo"
-
+  const t_carousel = await useTranslation(Props.params.lng, 'skill-carousel')
+  const items: CarouselImageAndListItem[] = t_carousel.t("items", { returnObjects: true })
+  const carouselTitle = t_carousel.t("title")
+  const carouselSubtitle = t_carousel.t("subtitle")
+  const t_testimonials = await useTranslation(Props.params.lng, 'home/testimonials')
+  const testTitle = t_testimonials.t("title")
+  const testSubtitle: string[] = t_testimonials.t("subtitles", { returnObjects: true })
+  const testItems: Testimonial[] = t_testimonials.t("testimonials", { returnObjects: true })
   return (
     <main>
-      <SectionTitle
-        title={t('section-1-title')}>
-        <p>
-          {t('section-1-content')}
-        </p>
-      </SectionTitle>
-      <SectionTitle
-        title={t('section-2-title')}>
-        <p>
-          {t('section-2-content-p1')}
-        </p>
-        <Checklist content={goals}/>
-        <br/>
-        <p>
-          {t('section-2-content-p2')}
-        </p>
-        <ViewOnGithub text={t('section-2-github')} url={projectGHUrl}/>
-      </SectionTitle>
-      <SectionTitle
-        title={t("section-3-title")}>
-        <p>
-          {t("section-3-content")}
-          <br/><br/>
-          {t("section-3-cred-1-title")}<br/>
-          <a href="https://www.flaticon.com" target="blank">{t("section-3-cred-1-content")}</a><br/>
-          {t("section-3-cred-2-title")}<br/>
-          <a href="https://www.flaticon.com" target="blank">{t("section-3-cred-2-content")}</a><br/>
-          {t("section-3-cred-3-title")}<br/>
-          <a href="https://github.com/web3templates/nextly-template/" target="blank">{t("section-3-cred-3-content")}</a><br/>
-        </p>
-      </SectionTitle>
+      <Hero lng={Props.params.lng}/>
+      <CarouselImageAndList carouselTitle={carouselTitle} carouselSubtitle={carouselSubtitle} items={items}/>
+      <TestimonialsElement title={testTitle} subtitles={testSubtitle} peopleTestimonial={testItems} />
+      <ContactForm lng={Props.params.lng}/>
     </main>
   )
 }

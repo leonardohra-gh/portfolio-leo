@@ -1,0 +1,13 @@
+{
+    "title": "Depoimentos",
+    "subtitles": ["Veja o que meus colegas de trabalho e clientes falam sobre mim e meu trabalho."],
+    "testimonials":
+    [
+        {
+            "text": "É um prazer trabalhar com Leonardo. Além de ser comprometido e fácil de lidar, é um exímio desenvolvedor, altamente comprometido com a qualidade do que produz. Quando se vê diante de um desafio, empenha o esforço que for necessário para resolvê-lo e só se satisfaz ao chegar em uma solução adequada. Recomendo altamente como pessoa e profissional",
+            "avatarUrl": "https://www.datocms-assets.com/129761/1714530438-image_2024-04-30_232716053.png",
+            "personName": "Sálvio Júnior",
+            "personRole": "Colega de trabalho"
+        }
+    ]
+}

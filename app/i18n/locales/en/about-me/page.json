@@ -1,0 +1,32 @@
+{
+    "title": "About me",
+    "paragraphs": 
+    [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices metus ac augue rhoncus condimentum. Morbi vulputate arcu ac bibendum dignissim. Quisque eget nibh convallis, luctus ex ac, vestibulum dui. Donec eget elementum nisi. Cras nec semper augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sagittis at risus vel ultrices. Aenean volutpat urna magna, in fringilla purus condimentum non.",
+        "Morbi quis neque aliquet, fringilla massa pellentesque, cursus neque. Donec gravida magna quis quam posuere, a viverra tellus volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel tincidunt ex. Maecenas eget egestas lorem. Ut ac purus venenatis, condimentum libero sit amet, tristique leo. Quisque scelerisque mi a augue dignissim, vel fermentum purus efficitur. Integer aliquam metus eget dolor placerat vehicula. Maecenas finibus aliquam lectus, vel gravida dolor aliquet id. Vestibulum quis convallis neque. Nullam in vestibulum odio, non tincidunt dui. Ut mollis egestas sapien vulputate semper. Ut ac risus non augue vestibulum feugiat id vitae nunc. Sed dolor dui, pulvinar sed nisl non, dictum efficitur sapien."
+    ],
+    "text-pre-tl": "",
+    "timeline":
+    [
+        {
+            "dateStart": "Janeiro 2015",
+            "elemTitle": "Estágio na UNIT",
+            "elemDescription": "De Janeiro de 2015 até Dezembro de 2016 estive como estagiário de desenvolvimento mobile na Universidade Tiradentes"
+        },
+        {
+            "dateStart": "Novembro 2016",
+            "elemTitle": "Estágio na UNIT",
+            "elemDescription": "De Novembro 2016 até Julho de 2017 (quando me formei) estive como estagiário na área de infraestrutura do TRT 20"
+        },
+        {
+            "dateStart": "Abril 2019",
+            "elemTitle": "Doutorado na UNICEN (Incompleto)",
+            "elemDescription": "De Abril de 2019 até Dezembro de 2023 estive estudando e publicando pesquisas durante meu doutorado na Argentina"
+        },
+        {
+            "dateStart": "Dezembro 2022",
+            "elemTitle": "Desenvolvedor Full Stack na EMURB",
+            "elemDescription": "Em Dezembro de 2022 comecei a trabalhar em um projeto da EMURB"
+        }
+    ]
+}

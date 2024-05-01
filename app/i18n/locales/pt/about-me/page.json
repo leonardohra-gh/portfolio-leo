@@ -1,0 +1,32 @@
+{
+    "title": "Sobre mim",
+    "paragraphs": 
+    [
+        "Sou formado em Ciência da Computação e durante minha graduação na universidade fui atraído por várias áreas da computação. Por conta disso, sempre tive vontade de aprender bastante para poder ser capaz de trabalhar com qualquer tarefa que precisasse. Uma das áreas que mais me atraiu foi a Inteligência Artificial, ao ponto de me levar a começar um doutorado na área. Entretanto, durante o doutorado, percebi que eu preferia seguir outro caminho que não fosse a área de pesquisa.",
+        "Felizmente, por volta do mesmo período, tive a oportunidade de trabalhar em um sistema, que me fez confirmar que tinha feito a escolha certa. Além disso, também comecei a estudar e praticar um pouco mais na área de desenvolvimento de jogos, não só na parte de programação, como também na parte artística (música, desenho, modelos)."
+    ],
+    "text-pre-tl": "Veja minha trajetória profissional:",
+    "timeline":
+    [
+        {
+            "dateStart": "Janeiro 2015",
+            "elemTitle": "Estágio na UNIT",
+            "elemDescription": "De Janeiro de 2015 até Dezembro de 2016 estive como estagiário de desenvolvimento mobile na Universidade Tiradentes"
+        },
+        {
+            "dateStart": "Novembro 2016",
+            "elemTitle": "Estágio no Tribunal Regional do Trabalho",
+            "elemDescription": "De Novembro 2016 até Julho de 2017 (quando me formei) estive como estagiário na área de infraestrutura do TRT 20"
+        },
+        {
+            "dateStart": "Abril 2019",
+            "elemTitle": "Doutorado na UNICEN (Incompleto)",
+            "elemDescription": "De Abril de 2019 até Dezembro de 2023 estive estudando e publicando pesquisas durante meu doutorado na Argentina"
+        },
+        {
+            "dateStart": "Dezembro 2022",
+            "elemTitle": "Desenvolvedor Full Stack na EMURB",
+            "elemDescription": "Em Dezembro de 2022 comecei a trabalhar em um projeto da EMURB"
+        }
+    ]
+}

@@ -20,8 +20,16 @@ The next steps will be:
 
 ## Credits
 
-My favicon and logo (![Neural network that looks like a brain](/app/favicon.ico)):
+My favicon and logo (![Neural network that looks like a brain](/public/favicon.ico)):
 [Icon made by imaginationlol from www.flaticon.com](https://www.flaticon.com/free-icon/artificial-intelligence_4460415?term=brain&page=1&position=83&origin=tag&related_id=4460415)
+https://www.flaticon.com/free-icon/twitter_733635?term=twitter&page=1&position=4&origin=search&related_id=733635
+https://www.flaticon.com/free-icon/linkedin_2111532?term=linkedin&page=1&position=9&origin=search&related_id=2111532
+https://www.flaticon.com/free-icon/email_542689?term=email&page=1&position=2&origin=search&related_id=542689
+https://www.flaticon.com/free-icon/front-end-programming_11987373?term=front-end&page=1&position=11&origin=search&related_id=11987373
+https://www.flaticon.com/free-icon/chinese-kung-fu_9937394?term=kung+fu&page=1&position=13&origin=search&related_id=9937394
+https://www.freepik.com/icon/coding_2085257#fromView=search&page=1&position=8&uuid=b24058cc-6d67-4e1e-98d4-68654be5788c
+https://www.freepik.com/icon/database-storage_2906206#fromView=search&page=1&position=0&uuid=41ace5b2-03b3-4d80-bbb0-26
+https://www.flaticon.com/free-icon/cloud-computing_9709059?term=computing&page=1&position=5&origin=search&related_id=9709059
 
 Template: 
 My website was made based on [Nextly Template](https://github.com/web3templates/nextly-template/)

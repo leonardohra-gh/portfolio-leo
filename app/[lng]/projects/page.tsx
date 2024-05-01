@@ -1,9 +1,9 @@
 // Interesting components: https://flowbite.com/docs/components/tabs/
 // https://flowbite.com/docs/components/card/
 
-import InteractiveTabs from "@/app/_components/tabs"
+import InteractiveTabs from "@/app/_components/Projects/tabs"
 import { CMSResultCategory } from "@/app/types";
-import { cmsQueryProjectSummaries } from "@/app/_components/cmsService";
+import { cmsQueryProjectSummaries } from "@/app/_components/General/cmsService";
 
 
 export default async function Projects

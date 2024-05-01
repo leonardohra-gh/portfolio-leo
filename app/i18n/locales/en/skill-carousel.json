@@ -1,0 +1,46 @@
+{
+    "title": "Skills",
+    "subtitle": "Since I had the opportunity to work on several areas while participating on certain projects, I was able to learn many skills, such as:",
+    "items":
+    [
+        {
+            "src": "https://www.datocms-assets.com/129761/1714488227-front-end-programming.png",
+            "listTitle": "Front-end",
+            "listItems": 
+            [
+                "React/Next.js",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "src": "https://www.datocms-assets.com/129761/1714497119-coding_2085257.png",
+            "listTitle": "Back-end",
+            "listItems": 
+            [
+                "Java Springboot",
+                "C# APIs",
+                "Python Data Analysis"
+            ]
+        },
+        {
+            "src": "https://www.datocms-assets.com/129761/1714497431-database-storage_2906206.png",
+            "listTitle": "Databases",
+            "listItems": 
+            [
+                "MySQL",
+                "MariaDB",
+                "MongoDB"
+            ]
+        },
+        {
+            "src": "https://www.datocms-assets.com/129761/1714499142-cloud-computing.png",
+            "listTitle": "Other skills",
+            "listItems": 
+            [
+                "Game development (Unreal Engine, LÖVE - LUA)",
+                "Mobile development (iOS, Android)",
+                "Docker deployment"
+            ]
+        }
+    ]
+}

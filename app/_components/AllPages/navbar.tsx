@@ -1,13 +1,13 @@
 'use client'
 
 import Link from "next/link";
-import ThemeChanger from "./themeSwitcher";
 import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure } from '@headlessui/react'
 import { useTranslation } from "@/app/i18n/client";
 import {Trans} from 'react-i18next/TransWithoutContext'
 import {languages, langFlags} from "@/app/i18n/settings"
 import logo from "/public/logo.png"
+import { DarkThemeToggle } from "flowbite-react";
 
 const MenuSVG = (params: {"open": boolean}) =>
 {
@@ -149,7 +149,7 @@ const NavigationBar =
                 </div>
                 
                 <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-                    <ThemeChanger />
+                    <DarkThemeToggle />
                 </div>
             </nav>
         </div>

@@ -1,10 +1,9 @@
 import flag_us from '/public/flag-us.png'
 import flag_br from '/public/flag-br.png'
-import flag_es from '/public/flag-es.png'
 
 export const fallbackLng = 'en'
-export const languages = [fallbackLng, 'pt', 'es']
-export const langFlags = [flag_us, flag_br, flag_es]
+export const languages = [fallbackLng, 'pt']
+export const langFlags = [flag_us, flag_br]
 export const defaultNS = 'translation'
 
 export function getOptions(lng: string = fallbackLng, ns: string = defaultNS)

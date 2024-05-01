@@ -29,3 +29,23 @@ export interface SummarizedProject
     _allProjectDescriptionLocales: LocalizedValue[]
 }
 
+export interface CMSResultProject
+{
+    contentProject: DetailedProject
+}
+
+export interface DetailedProject
+{
+    projectId: string,
+    _allProjectTitleLocales: LocalizedValue[],
+    projectDateAdded: string,
+    projectAlbum: ImageFile[],
+    _allProjectBodyLocales: LocalizedValue[]
+}
+
+export interface ImageFile
+{
+    url: string,
+    height: number,
+    width: number
+}
