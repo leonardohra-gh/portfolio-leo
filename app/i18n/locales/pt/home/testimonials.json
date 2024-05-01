@@ -1,0 +1,13 @@
+{
+    "title": "Depoimentos",
+    "subtitles": ["Veja o que meus colegas de trabalho e clientes falam sobre mim e meu trabalho."],
+    "testimonials":
+    [
+        {
+            "text": "Ele manja!",
+            "avatarUrl": "https://www.datocms-assets.com/129761/1714499142-cloud-computing.png",
+            "personName": "Alguém",
+            "personRole": "De algum lugar"
+        }
+    ]
+}
