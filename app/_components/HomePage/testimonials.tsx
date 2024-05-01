@@ -55,10 +55,10 @@ function SingleTestimonial({ testimonial }: { testimonial: Testimonial })
         <figure className="mx-auto max-w-screen-md text-center">
             <QuoteSVG />
             <Blockquote>
-                <p className="text-2xl font-medium italic text-gray-900 dark:text-white">{testimonial.text}</p>
+                <p className="text-base font-medium italic text-gray-900 dark:text-white">{testimonial.text}</p>
             </Blockquote>
             <figcaption className="mt-6 flex items-center justify-center space-x-3">
-                <Avatar rounded size="xs" img={testimonial.avatarUrl} alt="profile picture" />
+                <Avatar rounded size="md" img={testimonial.avatarUrl} alt="profile picture" />
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                     <cite className="pr-3 font-medium text-gray-900 dark:text-white">{testimonial.personName}</cite>
                     <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">{testimonial.personRole}</cite>
