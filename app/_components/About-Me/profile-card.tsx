@@ -7,7 +7,7 @@ import linkedinIcon from "@/public/about-me/linkedin.png"
 import emailIcon from "@/public/about-me/email.png"
 
 
-export default function ProfileCard()
+export default function ProfileCard({ subtitle }: { subtitle: string })
 {
   return (
     <Card className="max-w-sm">
@@ -20,19 +20,21 @@ export default function ProfileCard()
           className="mb-3 rounded-full shadow-lg"
         />
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Leonardo Henrique da Rocha Araujo</h5>
-        <span className="text-sm text-gray-500 dark:text-gray-400">Desenvolvedor Full Stack</span>
+        <span className="text-sm text-gray-500 dark:text-gray-400">{subtitle}</span>
         <div className="flex flex-wrap gap-2 pt-2">
           <a href="https://www.linkedin.com/in/leonardohra/" target="_blank" rel="noopener">
             <Button size="xs" outline pill>
-              <Image src={linkedinIcon} width={32} height={32} alt="" className="h-6 w-6" />
+              <Image src={linkedinIcon} width={32} height={32} alt="" className="h-6 w-6 dark:invert" />
             </Button>
           </a>
-          <Button size="xs" outline pill>
-            <Image src={emailIcon} width={32} height={32} alt="" className="h-6 w-6" />
-          </Button>
-          <Button size="xs" outline pill>
-            <Image src={twitterIcon} width={32} height={32} alt="" className="h-6 w-6" />
-          </Button>
+          <a href="mailto:leonardohra.gh@gmail.com" target="_blank" rel="noopener">
+            <Button size="xs" outline pill>
+              <Image src={emailIcon} width={32} height={32} alt="" className="h-6 w-6 dark:invert" />
+            </Button>
+          </a>
+          {/*<Button size="xs" outline pill>
+            <Image src={twitterIcon} width={32} height={32} alt="" className="h-6 w-6 dark:invert" />
+          </Button>*/}
         </div>
       </div>
     </Card>
