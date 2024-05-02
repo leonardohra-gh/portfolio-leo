@@ -3,7 +3,7 @@
     "paragraphs": 
     [
         "Sou formado em Ciência da Computação e durante minha graduação na universidade fui atraído por várias áreas da computação. Por conta disso, sempre tive vontade de aprender bastante para poder ser capaz de trabalhar com qualquer tarefa que precisasse. Uma das áreas que mais me atraiu foi a Inteligência Artificial, ao ponto de me levar a começar um doutorado na área. Entretanto, durante o doutorado, percebi que eu preferia seguir outro caminho que não fosse a área de pesquisa.",
-        "Felizmente, por volta do mesmo período, tive a oportunidade de trabalhar em um sistema, que me fez confirmar que tinha feito a escolha certa. Além disso, também comecei a estudar e praticar um pouco mais na área de desenvolvimento de jogos, não só na parte de programação, como também na parte artística (música, desenho, modelos)."
+        "Felizmente, por volta do mesmo período, tive a oportunidade de trabalhar em um sistema, que me fez confirmar que tinha feito a escolha certa. Além disso, devido à minha paixão por criar histórias e mecânicas, também comecei a estudar e praticar um pouco mais na área de desenvolvimento de jogos, para um dia criar meus próprios jogos. Não só na parte de programação, como também na parte artística (como música, desenho, modelos 3D)."
     ],
     "text-pre-tl": "Veja minha trajetória profissional:",
     "timeline":
@@ -26,7 +26,7 @@
         {
             "dateStart": "Dezembro 2022",
             "elemTitle": "Desenvolvedor Full Stack na EMURB",
-            "elemDescription": "Em Dezembro de 2022 comecei a trabalhar em um projeto da EMURB"
+            "elemDescription": "Em Dezembro de 2022 comecei a trabalhar em várias partes de um sistema interno da EMURB"
         }
     ]
 }
