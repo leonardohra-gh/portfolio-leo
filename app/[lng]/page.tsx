@@ -19,13 +19,19 @@ export default async function Home
   const items: CarouselImageAndListItem[] = t_carousel.t("items", { returnObjects: true })
   const carouselTitle = t_carousel.t("title")
   const carouselSubtitle = t_carousel.t("subtitle")
+
   const t_testimonials = await useTranslation(Props.params.lng, 'home/testimonials')
   const testTitle = t_testimonials.t("title")
   const testSubtitle: string[] = t_testimonials.t("subtitles", { returnObjects: true })
   const testItems: Testimonial[] = t_testimonials.t("testimonials", { returnObjects: true })
+
+  const t_hero = await useTranslation(Props.params.lng, 'home/hero')
+  const heroTitle = t_hero.t("title")
+  const heroSubtitles: string[] = t_hero.t("subtitles", { returnObjects: true })
+  const heroButtons: string[] = t_hero.t("buttons", { returnObjects: true })
   return (
     <main>
-      <Hero lng={Props.params.lng}/>
+      <Hero title={heroTitle} paragraphs={heroSubtitles} buttonsText={heroButtons} currentLng={Props.params.lng}/>
       <CarouselImageAndList carouselTitle={carouselTitle} carouselSubtitle={carouselSubtitle} items={items}/>
       <TestimonialsElement title={testTitle} subtitles={testSubtitle} peopleTestimonial={testItems} />
       <ContactForm lng={Props.params.lng}/>
