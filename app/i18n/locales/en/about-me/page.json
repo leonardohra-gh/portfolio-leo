@@ -2,11 +2,11 @@
     "title": "About me",
     "paragraphs": 
     [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices metus ac augue rhoncus condimentum. Morbi vulputate arcu ac bibendum dignissim. Quisque eget nibh convallis, luctus ex ac, vestibulum dui. Donec eget elementum nisi. Cras nec semper augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sagittis at risus vel ultrices. Aenean volutpat urna magna, in fringilla purus condimentum non.",
-        "Morbi quis neque aliquet, fringilla massa pellentesque, cursus neque. Donec gravida magna quis quam posuere, a viverra tellus volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel tincidunt ex. Maecenas eget egestas lorem. Ut ac purus venenatis, condimentum libero sit amet, tristique leo. Quisque scelerisque mi a augue dignissim, vel fermentum purus efficitur. Integer aliquam metus eget dolor placerat vehicula. Maecenas finibus aliquam lectus, vel gravida dolor aliquet id. Vestibulum quis convallis neque. Nullam in vestibulum odio, non tincidunt dui. Ut mollis egestas sapien vulputate semper. Ut ac risus non augue vestibulum feugiat id vitae nunc. Sed dolor dui, pulvinar sed nisl non, dictum efficitur sapien."
+        "I am graduated in Computer Science and during my time at the university I was drawn to many areas on computing. Thanks to this, I always had the drive to learn several things to be able to work in any task. One of the areas that excites me the most is Artificial Inteligence, which made me start a PhD research. However, during my time as a PhD student, I realized that I would rather follow another path, which is not research.",
+        "Fortunately, during this period, I had the opportunity to work in a system, which made me believe that I have chosen correctly. Furthermore, since I am also passionate about creating stories and mechanics, I have started learning about Game Development to one day create my own games. Not only did I study game programming, but also I have started learning other areas related to this form of art (such as music, art, 3D modeling)."
     ],
-    "text-pre-tl": "",
-    "timeline":
+    "text-pre-tl": "Take a look at my professional history:",
+    "timeline": 
     [
         {
             "dateStart": "January 2015",
