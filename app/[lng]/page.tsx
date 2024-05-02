@@ -29,12 +29,20 @@ export default async function Home
   const heroTitle = t_hero.t("title")
   const heroSubtitles: string[] = t_hero.t("subtitles", { returnObjects: true })
   const heroButtons: string[] = t_hero.t("buttons", { returnObjects: true })
+  
+  const t_contactForm = await useTranslation(Props.params.lng, 'home/contactForm')
+  const contactTitle = t_contactForm.t("heading")
+  const contactSubtitles: string[] = t_contactForm.t("subheading", { returnObjects: true })
+  const contactLabels: string[] = t_contactForm.t("labels", { returnObjects: true })
+  const contactPlaceholders: string[] = t_contactForm.t("placeholders", { returnObjects: true })
+  const contactSubmit = t_contactForm.t("buttonSubmit")
+
   return (
     <main>
       <Hero title={heroTitle} paragraphs={heroSubtitles} buttonsText={heroButtons} currentLng={Props.params.lng}/>
       <CarouselImageAndList carouselTitle={carouselTitle} carouselSubtitle={carouselSubtitle} items={items}/>
       <TestimonialsElement title={testTitle} subtitles={testSubtitle} peopleTestimonial={testItems} />
-      <ContactForm lng={Props.params.lng}/>
+      <ContactForm title={contactTitle} paragraphs={contactSubtitles} labels={contactLabels} placeholders={contactPlaceholders} submitText={contactSubmit}/>
     </main>
   )
 }

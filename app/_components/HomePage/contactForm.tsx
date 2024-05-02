@@ -2,10 +2,9 @@
 // https://medium.com/@abilsavio/email-contact-form-using-nextjs-app-router-60c29fe70644
 
 import { Button, Label, TextInput, Textarea } from "flowbite-react";
-import { useTranslation } from "@/app/i18n/client";
 import { useForm } from 'react-hook-form';
 import { sendEmail } from '@/app/utils/send-email';
-import {SecondLevelHeading} from "@/app/_components/General/typography";
+import { SecondLevelHeading } from "@/app/_components/General/typography";
 
 export type FormData = {
     nameCompany: string;
@@ -13,37 +12,53 @@ export type FormData = {
     message: string;
 };
 
-export function ContactForm({ lng }: { lng: string }) {
-    const { t } = useTranslation(lng, 'contactForm')
+export function ContactForm(
+    {
+        title,
+        paragraphs,
+        labels,
+        placeholders,
+        submitText
+    }:
+        {
+            title: string,
+            paragraphs: string[],
+            labels: string[],
+            placeholders: string[],
+            submitText: string
+        }
+)
+{
     const { register, handleSubmit } = useForm<FormData>();
 
-    function onSubmit(data: FormData) {
+    function onSubmit(data: FormData)
+    {
         sendEmail(data);
     }
 
     return (
         <div className="flex flex-col items-center">
-            <SecondLevelHeading title={t("heading")} subtitles={[t("subheading")]} classNamePlus="text-center"/>
+            <SecondLevelHeading title={title} subtitles={paragraphs} classNamePlus="text-center" />
             <form id="contactForm" className="flex w-full lg:w-3/5 flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <div className="mb-2 block">
-                        <Label htmlFor="formNameCompany" value={t("nameCompanyLabel")} />
+                        <Label htmlFor="formNameCompany" value={labels[0]} />
                     </div>
-                    <TextInput id="formNameCompany" type="text" placeholder={t("nameCompanyPlaceholder")} required shadow {...register('nameCompany', { required: true })} />
+                    <TextInput id="formNameCompany" type="text" placeholder={placeholders[0]} required shadow {...register('nameCompany', { required: true })} />
                 </div>
                 <div>
                     <div className="mb-2 block">
-                        <Label htmlFor="formEmail" value={t("emailLabel")} />
+                        <Label htmlFor="formEmail" value={labels[1]} />
                     </div>
-                    <TextInput id="formEmail" type="email" placeholder={t("emailPlaceholder")} shadow {...register('email', { required: false })} />
+                    <TextInput id="formEmail" type="email" placeholder={placeholders[1]} shadow {...register('email', { required: false })} />
                 </div>
                 <div>
                     <div className="mb-2 block">
-                        <Label htmlFor="comment" value={t("messageLabel")} />
+                        <Label htmlFor="comment" value={labels[2]} />
                     </div>
-                    <Textarea id="comment" placeholder={t("messagePlaceholder")} required rows={4} {...register('message', { required: true })} />
+                    <Textarea id="comment" placeholder={placeholders[2]} required rows={4} {...register('message', { required: true })} />
                 </div>
-                <Button color="purple" type="submit">{t("buttonSubmit")}</Button>
+                <Button color="purple" type="submit">{submitText}</Button>
             </form>
         </div>
 

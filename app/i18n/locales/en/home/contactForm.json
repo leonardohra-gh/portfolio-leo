@@ -1,0 +1,7 @@
+{
+    "heading": "Contact me",
+    "subheading": ["Do you want to hire me? Do you want to talk to me about a project? Send me a message!"],
+    "labels": ["Name/Company", "Email (Optional)", "Message"],
+    "placeholders": ["Google", "hiring@google.com", "We would like to hire you!"],
+    "buttonSubmit": "Send"
+}
