@@ -30,6 +30,8 @@ https://www.flaticon.com/free-icon/chinese-kung-fu_9937394?term=kung+fu&page=1&p
 https://www.freepik.com/icon/coding_2085257#fromView=search&page=1&position=8&uuid=b24058cc-6d67-4e1e-98d4-68654be5788c
 https://www.freepik.com/icon/database-storage_2906206#fromView=search&page=1&position=0&uuid=41ace5b2-03b3-4d80-bbb0-26
 https://www.flaticon.com/free-icon/cloud-computing_9709059?term=computing&page=1&position=5&origin=search&related_id=9709059
+https://www.flaticon.com/free-icon/console_686589?term=game&page=1&position=1&origin=search&related_id=686589
+
 
 Template: 
 My website was made based on [Nextly Template](https://github.com/web3templates/nextly-template/)

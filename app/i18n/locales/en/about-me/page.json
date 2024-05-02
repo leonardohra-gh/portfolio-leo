@@ -9,24 +9,24 @@
     "timeline":
     [
         {
-            "dateStart": "Janeiro 2015",
-            "elemTitle": "Estágio na UNIT",
-            "elemDescription": "De Janeiro de 2015 até Dezembro de 2016 estive como estagiário de desenvolvimento mobile na Universidade Tiradentes"
+            "dateStart": "January 2015",
+            "elemTitle": "Internship at UNIT",
+            "elemDescription": "From January 2015 to December 2016 I was working as a mobile development intern at Universidade Tiradentes"
         },
         {
-            "dateStart": "Novembro 2016",
-            "elemTitle": "Estágio na UNIT",
-            "elemDescription": "De Novembro 2016 até Julho de 2017 (quando me formei) estive como estagiário na área de infraestrutura do TRT 20"
+            "dateStart": "November 2016",
+            "elemTitle": "Internship at TRT 20",
+            "elemDescription": "From November 2016 to July 2017 (when I graduated) I was working as an infrastructure intern at Tribunal Regional do Trabalho 20"
         },
         {
-            "dateStart": "Abril 2019",
-            "elemTitle": "Doutorado na UNICEN (Incompleto)",
-            "elemDescription": "De Abril de 2019 até Dezembro de 2023 estive estudando e publicando pesquisas durante meu doutorado na Argentina"
+            "dateStart": "April 2019",
+            "elemTitle": "Graduate Work at PhD level (UNICEN)",
+            "elemDescription": "From April 2019 to December 2023 I have been studying and publishing research at a PhD level in Software Engineering and Artificial Inteligence in Argentina."
         },
         {
-            "dateStart": "Dezembro 2022",
-            "elemTitle": "Desenvolvedor Full Stack na EMURB",
-            "elemDescription": "Em Dezembro de 2022 comecei a trabalhar em um projeto da EMURB"
+            "dateStart": "December 2022",
+            "elemTitle": "Full Stack Developer at EMURB",
+            "elemDescription": "In December 2022 I have started working in several areas of a system for internal use at EMURB."
         }
     ]
 }
