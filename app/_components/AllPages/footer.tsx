@@ -35,7 +35,16 @@ export default function Footer({ lng }: { lng: string }) {
                     </a>*/}
                 </div>
                 <RegularParagraph paragraphs={[t("credits-ilustration")]} classNamePlus="text-center my-2" />
-                <p className="mt-1 text-gray-500 dark:text-gray-400">{t("credits-more-info")}<a href="https://github.com/leonardohra-gh/portfolio-leo/blob/vercel-preview/README.md#credits" className="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline">{t("credits-click")}</a></p>
+                <p className="mt-1 text-gray-500 dark:text-gray-400">{t("credits-more-info")}
+                    <a 
+                        href="https://github.com/leonardohra-gh/portfolio-leo/blob/master/README.md#credits" 
+                        className="font-medium text-blue-600 underline dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:no-underline"
+                        target="_blank"
+                        rel="noopener"
+                        >
+                            {t("credits-click")}
+                    </a>
+                </p>
             </div>
     );
 }
