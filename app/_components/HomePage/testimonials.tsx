@@ -33,7 +33,7 @@ export function TestimonialsElement(
 )
 {
     return (
-        <div className="my-4 flex flex-row md:flex-col">
+        <div className="my-4 flex flex-col">
             <SecondLevelHeading title={title} subtitles={subtitles} classNamePlus="text-center" />
             {peopleTestimonial.map(
                 (tests: Testimonial, index: number) =>
