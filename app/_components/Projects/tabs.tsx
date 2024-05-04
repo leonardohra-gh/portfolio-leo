@@ -24,8 +24,7 @@ const InteractiveTabs =
             <div>
                 <Tabs
                     aria-label="Projects tab"
-                    style="underline"
-                    className='mx-2'>
+                    style="underline">
                     {tabs.map
                         (
                             (
@@ -76,9 +75,9 @@ const TabCard =
         return (
             <Link
                 href={`/${lng}/projects/${id}`}
-                className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                className="flex flex-col my-1 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <Image
-                    className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg dark:invert"
+                    className="object-scale-down w-full rounded-t-lg h-48 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg dark:invert"
                     src={`${imgUrl}`}
                     width={200}
                     height={200}
