@@ -21,6 +21,8 @@ export function getLocalizedText(localizedArray: LocalizedValue[], lng: string)
 
 export async function cmsService(query: string)
 {
+  // https://nextjs.org/docs/app/building-your-application/data-fetching/fetching-caching-and-revalidating#revalidating-data
+  // Check if should revalidate to get new content
     const options = 
     {
         method: 'POST',
