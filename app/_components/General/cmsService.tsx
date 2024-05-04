@@ -37,7 +37,7 @@ export async function cmsService(query: string)
       }),
     next:
     {
-      revalidate: 360
+      revalidate: 3600
     }
   }
   const contentResponse = await fetch('https://graphql.datocms.com/', options)
