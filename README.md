@@ -34,8 +34,8 @@ Skill Carousel:
 - [Other Skills - Iconjam - Flaticon](https://www.flaticon.com/free-icon/cloud-computing_9709059?term=computing&page=1&position=5&origin=search&related_id=9709059)
 
 Project thumbnails:
--[Kung Fu System - Leremy - Flaticon](https://www.flaticon.com/free-icon/chinese-kung-fu_9937394?term=kung+fu&page=1&position=13&origin=search&related_id=9937394)
--[Squid Squash - Good Ware - Flaticon](https://www.flaticon.com/free-icon/console_686589?term=game&page=1&position=1&origin=search&related_id=686589)
+- [Kung Fu System - Leremy - Flaticon](https://www.flaticon.com/free-icon/chinese-kung-fu_9937394?term=kung+fu&page=1&position=13&origin=search&related_id=9937394)
+- [Squid Squash - Good Ware - Flaticon](https://www.flaticon.com/free-icon/console_686589?term=game&page=1&position=1&origin=search&related_id=686589)
 
 
 
