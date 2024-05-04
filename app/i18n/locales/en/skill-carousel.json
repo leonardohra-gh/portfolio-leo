@@ -33,11 +33,22 @@
             ]
         },
         {
+            "src": "https://www.datocms-assets.com/129761/1714828740-language.png",
+            "listTitle": "Languages",
+            "listItems": 
+            [
+                "Portuguese - Native",
+                "English - Fluent",
+                "Spanish - Intermediate",
+                "Japanese - Basic"
+            ]
+        },
+        {
             "src": "https://www.datocms-assets.com/129761/1714499142-cloud-computing.png",
             "listTitle": "Other skills",
             "listItems": 
             [
-                "Game development (Unreal Engine, LÖVE - LUA)",
+                "Game development (Unreal Engine, LÖVE)",
                 "Mobile development (iOS, Android)",
                 "Docker deployment"
             ]
