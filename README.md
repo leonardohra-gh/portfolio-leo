@@ -18,8 +18,8 @@ The next steps will be:
 
 ## Credits
 
-My favicon and logo (![Neural network that looks like a brain](/public/favicon.ico)):
-[Icon made by imaginationlol from www.flaticon.com](https://www.flaticon.com/free-icon/artificial-intelligence_4460415?term=brain&page=1&position=83&origin=tag&related_id=4460415)
+My favicon and logo: 
+- [Neural Network brain - imaginationlol - Flaticon](https://www.flaticon.com/free-icon/artificial-intelligence_4460415?term=brain&page=1&position=83&origin=tag&related_id=4460415)
 
 Social icons:
 - [Twitter - Pixel perfect - Flaticon](https://www.flaticon.com/free-icon/twitter_733635?term=twitter&page=1&position=4&origin=search&related_id=733635)
